@@ -1,4 +1,6 @@
-    *จงเขียนโปรแกรมเพื่อแปลงอุณหภูมิ โดยรับมาจากผู้ใช้เป็นองศาเซลเซียส และแปลงเป็นฟาเรนไฮต์
+/*
+    จงเขียนโปรแกรมเพื่อแปลงอุณหภูมิ โดยรับมาจากผู้ใช้เป็นองศาเซลเซียส และแปลงเป็นฟาเรนไฮต์
+
     Test case:
         User input :
             22
@@ -10,17 +12,18 @@
             36
     Output:
         36 degree Celsius = 96.8 degree Fahrenheit
-
+*/
 #include <stdio.h>
 
 int main() {
-    double degree Celsius, degree Fahrenheit;
+    float degreeCelsius, degreeFahrenheit;
 
-    printf("Enter an angle in degree Celsius: ");
-    scanf("%.2f", &degree Celsius);
+    printf("User input:\n");
+    scanf("%f", &degreeCelsius);
 
-    degree Fahrenheit = degree Celsius * 9/5 + 32;
-    printf("%.2f degree Celsius = %.2f degree Fahrenheit\n", degree Celsius, degree Fahrenheit);
-    
+    degreeFahrenheit = (degreeCelsius*9/5) + 32;
+
+    printf("%1.0f degree Celsius = %.1f degree Fahrenheit", degreeCelsius, degreeFahrenheit);
+
     return 0;
-}
+}//endfunction
